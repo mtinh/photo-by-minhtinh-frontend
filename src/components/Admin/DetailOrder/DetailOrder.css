@@ -1,0 +1,34 @@
+.detail-order {
+    max-width: 1000px;
+}
+
+.detail-order-actions {
+    margin-bottom: 20px;
+}
+
+.detail-order-actions h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.detail-order-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.detail-order-gallery {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.detail-order-gallery > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.detail-order-gallery select {
+    max-width: 360px;
+}

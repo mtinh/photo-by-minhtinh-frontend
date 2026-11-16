@@ -1,0 +1,114 @@
+.home-hero {
+    padding: 90px 0;
+    background:
+        radial-gradient(ellipse at top right, rgba(37, 99, 235, 0.45), transparent 60%),
+        #0a0a0a;
+    color: #ffffff;
+}
+
+.home-eyebrow {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    letter-spacing: 0.25em;
+}
+
+.home-hero h1 {
+    max-width: 720px;
+    margin-top: 16px;
+    font-size: clamp(32px, 6vw, 56px);
+    line-height: 1.15;
+}
+
+.home-subtitle {
+    max-width: 580px;
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.home-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.home-feature {
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+}
+
+.home-feature svg {
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--primary-soft);
+    color: var(--primary);
+}
+
+.home-feature h3 {
+    margin-top: 14px;
+    font-size: 17px;
+}
+
+.home-feature p {
+    margin-top: 6px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.home-section-title {
+    margin: 40px 0 16px;
+    font-size: 22px;
+}
+
+.home-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-section-header a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 24px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.home-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.home-category {
+    padding: 10px 16px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.home-category span {
+    color: var(--text-muted);
+}
+
+.home-category:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}

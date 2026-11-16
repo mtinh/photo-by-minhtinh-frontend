@@ -1,0 +1,8 @@
+.product-list {
+    padding-top: 32px;
+}
+
+.product-list-loading {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}

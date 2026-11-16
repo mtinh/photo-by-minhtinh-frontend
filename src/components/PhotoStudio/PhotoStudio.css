@@ -1,0 +1,10 @@
+.photo-studio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-studio-main {
+    flex: 1;
+    padding-bottom: 40px;
+}

@@ -1,0 +1,236 @@
+.gallery-page {
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.gallery-error {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-eyebrow {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.gallery-cover {
+    position: relative;
+    height: 70vh;
+    min-height: 380px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background: #111111;
+    color: #ffffff;
+}
+
+.gallery-cover img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-cover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15) 60%, transparent);
+}
+
+.gallery-cover-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+}
+
+.gallery-cover-content h1 {
+    margin: 12px 0 8px;
+    font-size: clamp(30px, 5vw, 50px);
+}
+
+.gallery-cover-content p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.gallery-cover-content .btn {
+    margin-top: 20px;
+}
+
+.gallery-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.gallery-toolbar-inner {
+    max-width: 1280px;
+    height: 58px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gallery-tabs {
+    display: flex;
+    gap: 6px;
+}
+
+.gallery-tabs button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.gallery-tabs button.active {
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.gallery-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+.gallery-footer {
+    padding: 30px 16px;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align: center;
+}
+
+.gallery-pin-input {
+    margin-top: 12px;
+    font-size: 22px;
+    letter-spacing: 0.4em;
+    text-align: center;
+}
+
+.gallery-lock {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    overflow: hidden;
+    background: #0a0a0a;
+}
+
+.gallery-lock-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    filter: blur(18px);
+    transform: scale(1.1);
+}
+
+.gallery-lock-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 32px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    color: #ffffff;
+    text-align: center;
+}
+
+.gallery-lock-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.gallery-lock-card h1 {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.gallery-lock-client {
+    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gallery-lock-text {
+    margin: 20px 0 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.gallery-lock-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.gallery-lock-card input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-lock-error {
+    margin-top: 8px;
+    color: #fca5a5;
+    font-size: 13px;
+}
+
+.gallery-lock-card button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #111111;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .gallery-toolbar-inner,
+    .gallery-content {
+        padding: 0 8px;
+    }
+
+    .gallery-toolbar-inner .btn {
+        font-size: 12px;
+    }
+}

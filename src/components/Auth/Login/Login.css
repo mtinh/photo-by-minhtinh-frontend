@@ -1,0 +1,10 @@
+.login-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-forgot {
+    text-align: right;
+    font-size: 14px;
+}

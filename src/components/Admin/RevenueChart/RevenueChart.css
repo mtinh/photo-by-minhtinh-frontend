@@ -1,0 +1,83 @@
+.revenue-chart-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.revenue-chart-header figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.revenue-chart-header small {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.revenue-chart-plot {
+    position: relative;
+}
+
+.revenue-chart-table {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chart-grid {
+    stroke: var(--viz-grid);
+    stroke-width: 1;
+}
+
+.chart-baseline {
+    stroke: var(--border);
+    stroke-width: 1;
+}
+
+.chart-label {
+    fill: var(--text-muted);
+    font-size: 11px;
+}
+
+.chart-bar {
+    fill: var(--viz-1);
+    transition: opacity 0.15s;
+}
+
+.chart-bar.dim {
+    opacity: 0.45;
+}
+
+.chart-hover {
+    fill: var(--surface-2);
+}
+
+.chart-tooltip {
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    font-size: 12px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.chart-tooltip small {
+    color: var(--text-muted);
+}
+
+.chart-swatch {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--viz-1);
+}

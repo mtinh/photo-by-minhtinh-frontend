@@ -1,0 +1,55 @@
+.my-photos {
+    padding-top: 32px;
+}
+
+.my-photos-desc {
+    margin: -8px 0 20px;
+}
+
+.my-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.my-photos-card {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    color: inherit;
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+}
+
+.my-photos-card:hover {
+    box-shadow: var(--shadow);
+}
+
+.my-photos-cover {
+    aspect-ratio: 4 / 3;
+    background: var(--surface-2);
+}
+
+.my-photos-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.my-photos-body {
+    padding: 14px 16px;
+}
+
+.my-photos-body h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.my-photos-expire {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    font-size: 13px;
+}

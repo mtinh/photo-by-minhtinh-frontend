@@ -1,0 +1,116 @@
+.dashboard h1 {
+    margin-bottom: 20px;
+}
+
+.dashboard-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.dashboard-hero p,
+.dashboard-hero small {
+    color: var(--text-muted);
+}
+
+.dashboard-hero strong {
+    font-size: 48px;
+    letter-spacing: -0.02em;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.dashboard-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+}
+
+.dashboard-icon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-size: 22px;
+}
+
+.dashboard-content h3 {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dashboard-content p {
+    margin: 4px 0 2px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.dashboard-content small {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.dashboard-range {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0 12px;
+}
+
+.dashboard-range select {
+    width: 220px;
+}
+
+.dashboard-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.dashboard-bottom h3 {
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.status-list {
+    list-style: none;
+}
+
+.status-list li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.status-list li > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.status-bar {
+    height: 8px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--surface-2);
+}
+
+.status-bar div {
+    height: 100%;
+    border-radius: 8px;
+    background: var(--viz-1);
+}

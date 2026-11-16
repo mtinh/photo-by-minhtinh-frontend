@@ -1,0 +1,10 @@
+.category-product {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.category-description {
+    margin-top: -8px;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+}

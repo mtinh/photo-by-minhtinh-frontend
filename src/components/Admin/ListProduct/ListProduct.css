@@ -1,0 +1,27 @@
+.table-wrapper.is-loading {
+    opacity: 0.6;
+}
+
+.list-product-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.list-product-name div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.list-product-name small {
+    color: var(--text-muted);
+}
+
+.list-product-thumb {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    font-size: 18px;
+}
